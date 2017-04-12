@@ -1,0 +1,86 @@
+<openerp>
+    <data>
+        <!-- List Vew -->
+        <record id="view_organization_tree" model="ir.ui.view">
+            <field name="name">Skok - Organization tree</field>
+            <field name="model">skok.organization</field>
+            <field name="arch" type="xml">
+                <tree string="Organizations">
+                    <field name="code"></field>
+                    <field name="name"></field>
+                    <field name="city_id"></field>
+                    <field name="state_id"></field>
+                    <field name="country_id"></field>
+                </tree>
+            </field>
+        </record>
+        <!-- Form Vew -->
+        <record id="view_organization_form" model="ir.ui.view">
+            <field name="name">Skok - Organization form</field>
+            <field name="model">skok.organization</field>
+            <field name="arch" type="xml">
+                <form string="Organization">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <label class="oe_edit_only" string="Name" attrs="{'invisible': True}"/>
+                                <field name="name" class="oe_inline" required="True" placeholder="Organization Name" />
+                            </h1>
+                        </div>
+                        <group string="Basic Info">
+                            <group>
+                                <field name="partner_id" readonly="True"></field>
+                                <field name="code" required="True"></field>
+                                <field name="country_id" required="True"></field>
+                            </group>
+                            <group>
+                                
+                                <field name="state_id" domain="[('country_id', '=', country_id)]" required="True" widget="selection"></field>
+                                <field name="city_id" domain="[('state_id', '=', state_id)]" widget="selection"></field>
+                            </group>
+                        </group>
+
+                        <group string="Contact Info">
+                            <group>
+                                <field name="street" required="True"></field>
+                                <field name="phone" required="True"></field>
+                                <field name="fax" ></field>
+                                <field name="email" ></field>
+                            </group>
+                            <group>
+                                <field name="street2" ></field>
+                                <field name="mobile" ></field>
+                                <field name="zip"></field>
+                            </group>
+                        </group>
+                        <separator string="Committee Members"></separator>
+                        <field name="committee_ids" readonly="True">
+                            <tree string="Committees">
+                                <field name="name"></field>
+                                <field name="title_id"></field>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Search Vew -->
+        <record id="skok_organization_filter" model="ir.ui.view">
+            <field name="name">skok.organization.filter</field>
+            <field name="model">skok.organization</field>
+            <field name="arch" type="xml">
+                <search string="Search Organizations">
+                    <field name="name" string="Organization" filter_domain="['|','|','|','|','|',('name','ilike',self),('code', 'ilike', self), ('phone', 'ilike', self), ('city_id.name', 'ilike', self), ('state_id.name', 'ilike', self), ('email', 'ilike', self)]"/>
+
+
+                    <group expand="1" string="Group By">
+                        <filter string="City" domain="[]" context="{'group_by':'city_id'}"/>
+                        <filter string="State" domain="[]" context="{'group_by':'state_id'}"/>
+                        <filter string="Country" domain="[]" context="{'group_by':'country_id'}"/>
+                    </group>
+
+                </search>
+            </field>
+        </record>
+    </data>
+</openerp>

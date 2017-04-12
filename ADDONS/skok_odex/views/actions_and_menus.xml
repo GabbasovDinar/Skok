@@ -1,0 +1,94 @@
+<openerp>
+    <data>
+        <menuitem name="Skok Management"
+            id="menu_skok_root"
+            groups="base.group_user"
+            sequence="10"/>
+
+        <!-- Committees -->
+        <menuitem name="Committees"
+            id="menu_skok_committees"
+            parent="menu_skok_root"
+            groups="base.group_user"
+            sequence="15"/>
+
+        <record model="ir.actions.act_window" id="committee_member_list_action">
+            <field name="name">Committee Members</field>
+            <field name="res_model">skok.committee.member</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first committee member
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Committee Members"
+            id="menu_skok_committee_member"
+            action="committee_member_list_action"
+            parent="menu_skok_committees"
+            groups="base.group_user"
+            sequence="10"/>
+
+        <record model="ir.actions.act_window" id="committee_title_list_action">
+            <field name="name">Committee Titles</field>
+            <field name="res_model">skok.committee.title</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first committee title
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Committee Titles"
+            id="menu_skok_committee_title"
+            action="committee_title_list_action"
+            parent="menu_skok_committees"
+            groups="base.group_user"
+            sequence="10"/>
+
+        <!-- Ende committees -->
+        
+        <!-- Settings -->
+
+        <menuitem name="Settings"
+            id="menu_skok_settings"
+            parent="menu_skok_root"
+            groups="base.group_user"
+            sequence="20"/>
+
+        <record model="ir.actions.act_window" id="organization_list_action">
+            <field name="name">Organizations</field>
+            <field name="res_model">skok.organization</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first organization
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Organizations"
+            id="menu_skok_organization"
+            action="organization_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="1"/>
+
+
+        
+
+        <!-- Ende Settings -->
+
+
+        <!-- States and cities -->
+        <menuitem id="res_state_menu" name="Country States"
+                  parent="menu_skok_settings" action="base_odex.res_state_list_action" />
+        <menuitem id="res_city_menu" name="Cities"
+                  parent="menu_skok_settings" action="base_odex.res_city_list_action" />
+    </data>
+</openerp>

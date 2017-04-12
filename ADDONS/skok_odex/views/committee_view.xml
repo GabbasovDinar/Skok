@@ -1,0 +1,93 @@
+<openerp>
+    <data>
+        <!-- List Vew -->
+        <record id="view_committee_title_tree" model="ir.ui.view">
+            <field name="name">Skok - committee.title tree</field>
+            <field name="model">skok.committee.title</field>
+            <field name="arch" type="xml">
+                <tree string="Committee Title">
+                    <field name="name"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_committee_title_form" model="ir.ui.view">
+            <field name="name">Skok - Committee Title form</field>
+            <field name="model">skok.committee.title</field>
+            <field name="arch" type="xml">
+                <form string="Committee Title">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"></field>
+                            </group>
+                            <group></group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Committee Members -->
+        <!-- List Vew -->
+        <record id="view_committee_member_tree" model="ir.ui.view">
+            <field name="name">Skok - committee.member tree</field>
+            <field name="model">skok.committee.member</field>
+            <field name="arch" type="xml">
+                <tree string="Committee Members">
+                    <field name="name"></field>
+                    <field name="title_id"></field>
+                    <field name="organization_id"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_committee_member_form" model="ir.ui.view">
+            <field name="name">Skok - Committee member form</field>
+            <field name="model">skok.committee.member</field>
+            <field name="arch" type="xml">
+                <form string="Committee member">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <label class="oe_edit_only" string="Name" attrs="{'invisible': True}"/>
+                                <field name="name" class="oe_inline" required="True" placeholder="Member Name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="title_id" required="True" widget="selection"></field>
+                            </group>
+                            <group>
+                                <field name="organization_id" required="True" widget="selection"></field>
+                            </group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_committee_member_search" model="ir.ui.view">
+            <field name="name">Skok - Committee member search</field>
+            <field name="model">skok.committee.member</field>
+            <field name="arch" type="xml">
+                <search string="Committee Search">
+                    <field name="name" string="Members" filter_domain="['|','|','|','|','|','|',('name','ilike',self),('organization_id.name', 'ilike', self), ('organization_id.code', 'ilike', self), ('organization_id.city_id.name', 'ilike', self), ('organization_id.state_id.name', 'ilike', self), ('title_id.name', 'ilike', self), ('notes', 'ilike', self)]"/>
+
+
+                    <group expand="1" string="Group By">
+                        <filter string="Organization" domain="[]" context="{'group_by':'organization_id'}"/>
+                        <filter string="Job Title" domain="[]" context="{'group_by':'title_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</openerp>
