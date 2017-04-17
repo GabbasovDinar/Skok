@@ -29,14 +29,14 @@
                         </div>
                         <group string="Basic Info">
                             <group>
-                                <field name="partner_id" readonly="True"></field>
+                                <field name="partner_id" invisible="True"></field>
                                 <field name="code" required="True"></field>
                                 <field name="country_id" required="True"></field>
                             </group>
                             <group>
                                 
                                 <field name="state_id" domain="[('country_id', '=', country_id)]" required="True" widget="selection"></field>
-                                <field name="city_id" domain="[('state_id', '=', state_id)]" widget="selection"></field>
+                                <field required="True" name="city_id" domain="[('state_id', '=', state_id)]" widget="selection"></field>
                             </group>
                         </group>
 

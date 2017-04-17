@@ -1,0 +1,934 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* skok_odex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-17 00:32+0000\n"
+"PO-Revision-Date: 2017-04-17 03:38+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: skok_odex
+#: help:skok.skok,ravage_date:0
+msgid ""
+"\n"
+"        Proposed date to ravage the document.\n"
+"        "
+msgstr ""
+"\n"
+"       تاریخ مقترح لإتلاف الوثیقة.\n"
+"        "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.procedure_type_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first Procedure Types\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">Create the first Procedure Types\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.committee_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first committee\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجیل مجالس الشركات\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.committee_member_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first committee member\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجیل أعضاء مجالس الشركات\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.committee_title_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first committee title\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجیل وظائف أعضاء مجالس الشركات\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.organization_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first organization\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجيـــل الشركات\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.procedure_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first procedure\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">Create the first procedure\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.skok_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first skok\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجيل صك\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: model:ir.actions.act_window,help:skok_odex.skok_type_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first skok type\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجيل أنواع الصكوك\n"
+"                </p>\n"
+"            "
+
+#. module: skok_odex
+#: field:skok.skok,counter:0
+msgid "Activity Counter"
+msgstr "عداد نشاط الوثیقة"
+
+#. module: skok_odex
+#: field:skok.skok,address:0
+msgid "Address"
+msgstr "العنوان"
+
+#. module: skok_odex
+#: field:skok.organization,partner_id:0
+msgid "Address Ref"
+msgstr "مرجع العنوان"
+
+#. module: skok_odex
+#: view:skok.skok.type:skok_odex.view_skok_type_form
+#: field:skok.skok.type,procedure_type_ids:0
+msgid "Allowed Procedures"
+msgstr "الاجراءات المتاحة"
+
+#. module: skok_odex
+#: field:skok.skok,attachment_ids:0
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Attachments"
+msgstr "مرفقات"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.view_organization_form
+msgid "Basic Info"
+msgstr "معلومـــات أساسية"
+
+#. module: skok_odex
+#: field:skok.view_skok.wizard,beneficier:0
+msgid "Beneficier"
+msgstr "المستفيد"
+
+#. module: skok_odex
+#: view:skok.add_skok.wizard:skok_odex.view_add_skok_wizard
+#: view:skok.confirm.wizard:skok_odex.view_confirm_wizard
+#: view:skok.view_skok.wizard:skok_odex.view_view_skok_wizard
+#: view:skok.wizards.wizard:skok_odex.view_wizards_wizard
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/__init__.py:67
+#, python-format
+msgid "Cannot convert date to hijri!"
+msgstr "لا يمكن تحويل التاريخ الى هجري"
+
+#. module: skok_odex
+#: model:ir.ui.menu,name:skok_odex.res_city_menu
+msgid "Cities"
+msgstr "المــــدن"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.skok_organization_filter
+#: field:skok.organization,city_id:0 field:skok.skok,city_id:0
+msgid "City"
+msgstr "المدينة"
+
+#. module: skok_odex
+#: field:skok.organization,code:0 field:skok.skok.type,code:0
+msgid "Code"
+msgstr "الرمز"
+
+#. module: skok_odex
+#: field:skok.organization,committee_ids:0
+msgid "Commitees"
+msgstr "مجالس الشركات"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_form
+#: view:skok.committee:skok_odex.view_committee_tree
+msgid "Committee"
+msgstr "مجلس الشركة"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_search
+msgid "Committee Member"
+msgstr "عضو مجلس شركة"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.committee_member_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_committee_member
+#: view:skok.committee:skok_odex.view_committee_form
+#: field:skok.committee,member_ids:0
+#: view:skok.committee.member:skok_odex.view_committee_member_tree
+#: view:skok.organization:skok_odex.view_organization_form
+msgid "Committee Members"
+msgstr "أعضاء مجالس الشركات"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_form
+#: field:skok.committee,name:0
+msgid "Committee Name"
+msgstr "اسم المجلس"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_search
+#: view:skok.committee.member:skok_odex.view_committee_member_search
+msgid "Committee Search"
+msgstr "بحث في مجالس الشركــات"
+
+#. module: skok_odex
+#: view:skok.committee.title:skok_odex.view_committee_title_form
+#: view:skok.committee.title:skok_odex.view_committee_title_tree
+msgid "Committee Title"
+msgstr "وظيفة عضو مجلس ادارة"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.committee_title_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_committee_title
+msgid "Committee Titles"
+msgstr "وظائف أعضاء مجالس الشركات"
+
+#. module: skok_odex
+#: view:skok.committee.member:skok_odex.view_committee_member_form
+msgid "Committee member"
+msgstr "عضو مجلس شركة"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.committee_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_committee
+#: model:ir.ui.menu,name:skok_odex.menu_skok_committees
+#: view:skok.organization:skok_odex.view_organization_form
+msgid "Committees"
+msgstr "مجالس الشركات"
+
+#. module: skok_odex
+#: code:addons/skok_odex/wizards/skok_wizards.py:11
+#: code:addons/skok_odex/wizards/skok_wizards.py:31
+#, python-format
+msgid "Confirm"
+msgstr "تأكيــد"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:91 selection:skok.skok,state:0
+#, python-format
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.view_organization_form
+msgid "Contact Info"
+msgstr "جهة الاتصال"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.skok_organization_filter
+#: field:skok.organization,country_id:0 field:skok.skok,country_id:0
+msgid "Country"
+msgstr "الدولة"
+
+#. module: skok_odex
+#: model:ir.ui.menu,name:skok_odex.res_state_menu
+msgid "Country States"
+msgstr "المحافظــات"
+
+#. module: skok_odex
+#: field:skok.organization,state_id:0 field:skok.skok,state_id:0
+msgid "Counttry State"
+msgstr "المحافظة"
+
+#. module: skok_odex
+#: field:skok.skok.type,created:0
+msgid "Created"
+msgstr "تم انشائه"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,create_uid:0 field:skok.committee,create_uid:0
+#: field:skok.committee.member,create_uid:0
+#: field:skok.committee.title,create_uid:0
+#: field:skok.confirm.wizard,create_uid:0 field:skok.organization,create_uid:0
+#: field:skok.procedure,create_uid:0 field:skok.procedure.type,create_uid:0
+#: field:skok.skok,create_uid:0 field:skok.skok.tag,create_uid:0
+#: field:skok.skok.type,create_uid:0 field:skok.view_skok.wizard,create_uid:0
+#: field:skok.wizards.wizard,create_uid:0
+msgid "Created by"
+msgstr "انشىء بواسطة"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,create_date:0 field:skok.committee,create_date:0
+#: field:skok.committee.member,create_date:0
+#: field:skok.committee.title,create_date:0
+#: field:skok.confirm.wizard,create_date:0
+#: field:skok.organization,create_date:0 field:skok.procedure,create_date:0
+#: field:skok.procedure.type,create_date:0 field:skok.skok,create_date:0
+#: field:skok.skok.tag,create_date:0 field:skok.skok.type,create_date:0
+#: field:skok.view_skok.wizard,create_date:0
+#: field:skok.wizards.wizard,create_date:0
+msgid "Created on"
+msgstr "تاريخ الانشاء"
+
+#. module: skok_odex
+#: field:skok.skok,creation_date:0
+msgid "Creation Date"
+msgstr "تاريخ الانشاء"
+
+#. module: skok_odex
+#: field:skok.skok,creation_date_hijri:0
+msgid "Creation Date (Hijri)"
+msgstr "تاريخ الانشاء (هجري)"
+
+#. module: skok_odex
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: field:skok.procedure,date:0 field:skok.view_skok.wizard,date:0
+msgid "Date"
+msgstr "تاريخ"
+
+#. module: skok_odex
+#: help:skok.skok,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,display_name:0
+#: field:skok.committee,display_name:0
+#: field:skok.committee.member,display_name:0
+#: field:skok.committee.title,display_name:0
+#: field:skok.confirm.wizard,display_name:0
+#: field:skok.organization,display_name:0 field:skok.procedure,display_name:0
+#: field:skok.procedure.type,display_name:0 field:skok.skok.tag,display_name:0
+#: field:skok.skok.type,display_name:0
+#: field:skok.view_skok.wizard,display_name:0
+#: field:skok.wizards.wizard,display_name:0
+msgid "Display Name"
+msgstr "المسمى"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Documentation"
+msgstr "توثيــق"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Documents"
+msgstr "وثـــائق"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:90 selection:skok.skok,state:0
+#, python-format
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: skok_odex
+#: model:ir.model,name:skok_odex.model_skok_skok
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,entry_date:0
+#: field:skok.confirm.wizard,entry_date:0 field:skok.skok,entry_date:0
+msgid "Entry Date"
+msgstr "تاريخ الادخال"
+
+#. module: skok_odex
+#: field:skok.skok,entry_date_hijri:0
+msgid "Entry Date (Hijri)"
+msgstr "تاريخ الادخال (هجري)"
+
+#. module: skok_odex
+#: field:skok.skok,expiry_date:0
+msgid "Expiry Date"
+msgstr "تاریخ نھایة الصلاحیة"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:135 selection:skok.skok,level:0
+#, python-format
+msgid "Fair Secret"
+msgstr "متوسطة السريّة"
+
+#. module: skok_odex
+#: field:skok.skok,message_follower_ids:0
+msgid "Followers"
+msgstr "المتابعين"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:126 selection:skok.skok,keep:0
+#, python-format
+msgid "Forever"
+msgstr "دائــم"
+
+#. module: skok_odex
+#: field:skok.skok,description:0
+msgid "Full Description"
+msgstr "النص الكامل"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "General"
+msgstr "بيانات أساسية"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_search
+#: view:skok.committee.member:skok_odex.view_committee_member_search
+#: view:skok.organization:skok_odex.skok_organization_filter
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: view:skok.skok:skok_odex.view_skok_search
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:134 selection:skok.skok,level:0
+#, python-format
+msgid "High Secret"
+msgstr "عالية السريّة"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "History"
+msgstr "تاريخ"
+
+#. module: skok_odex
+#: help:skok.skok,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,id:0 field:skok.committee,id:0
+#: field:skok.committee.member,id:0 field:skok.committee.title,id:0
+#: field:skok.confirm.wizard,id:0 field:skok.organization,id:0
+#: field:skok.procedure,id:0 field:skok.procedure.type,id:0
+#: field:skok.skok,id:0 field:skok.skok.tag,id:0 field:skok.skok.type,id:0
+#: field:skok.view_skok.wizard,id:0 field:skok.wizards.wizard,id:0
+msgid "ID"
+msgstr "معرّف"
+
+#. module: skok_odex
+#: help:skok.skok,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: skok_odex
+#: field:skok.skok,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: skok_odex
+#: view:skok.committee.member:skok_odex.view_committee_member_search
+#: field:skok.committee.member,title_id:0 field:skok.committee.title,name:0
+msgid "Job Title"
+msgstr "المسمى الوظيفي"
+
+#. module: skok_odex
+#: field:skok.skok,keep:0
+msgid "Keep Strategy"
+msgstr "نوع الحفظ"
+
+#. module: skok_odex
+#: field:skok.skok,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,__last_update:0
+#: field:skok.committee,__last_update:0
+#: field:skok.committee.member,__last_update:0
+#: field:skok.committee.title,__last_update:0
+#: field:skok.confirm.wizard,__last_update:0
+#: field:skok.organization,__last_update:0 field:skok.procedure,__last_update:0
+#: field:skok.procedure.type,__last_update:0 field:skok.skok,__last_update:0
+#: field:skok.skok.tag,__last_update:0 field:skok.skok.type,__last_update:0
+#: field:skok.view_skok.wizard,__last_update:0
+#: field:skok.wizards.wizard,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,write_uid:0 field:skok.committee,write_uid:0
+#: field:skok.committee.member,write_uid:0
+#: field:skok.committee.title,write_uid:0 field:skok.confirm.wizard,write_uid:0
+#: field:skok.organization,write_uid:0 field:skok.procedure,write_uid:0
+#: field:skok.procedure.type,write_uid:0 field:skok.skok,write_uid:0
+#: field:skok.skok.tag,write_uid:0 field:skok.skok.type,write_uid:0
+#: field:skok.view_skok.wizard,write_uid:0
+#: field:skok.wizards.wizard,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,write_date:0 field:skok.committee,write_date:0
+#: field:skok.committee.member,write_date:0
+#: field:skok.committee.title,write_date:0
+#: field:skok.confirm.wizard,write_date:0 field:skok.organization,write_date:0
+#: field:skok.procedure,write_date:0 field:skok.procedure.type,write_date:0
+#: field:skok.skok,write_date:0 field:skok.skok.tag,write_date:0
+#: field:skok.skok.type,write_date:0 field:skok.view_skok.wizard,write_date:0
+#: field:skok.wizards.wizard,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Location"
+msgstr "الموقع"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:136 selection:skok.skok,level:0
+#, python-format
+msgid "Low Secret"
+msgstr "منخفضة السريّة"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,member_id:0
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: field:skok.procedure,member_id:0 field:skok.procedure,partner_id:0
+msgid "Member"
+msgstr "عضو مجلس الشركة"
+
+#. module: skok_odex
+#: view:skok.committee.member:skok_odex.view_committee_member_form
+#: field:skok.committee.member,name:0
+#: view:skok.procedure:skok_odex.view_procedure_search
+msgid "Member Name"
+msgstr "اسم عضو المجلس"
+
+#. module: skok_odex
+#: view:skok.committee.member:skok_odex.view_committee_member_search
+msgid "Members"
+msgstr "الأعضــاء"
+
+#. module: skok_odex
+#: field:skok.skok,message_ids:0
+msgid "Messages"
+msgstr "المراسلات"
+
+#. module: skok_odex
+#: help:skok.skok,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_form
+#: view:skok.committee.member:skok_odex.view_committee_member_form
+#: view:skok.organization:skok_odex.view_organization_form
+#: field:skok.organization,name:0 field:skok.procedure,name:0
+#: view:skok.skok:skok_odex.view_skok_form field:skok.skok,display_name:0
+#: field:skok.skok.tag,name:0 field:skok.skok.type,name:0
+msgid "Name"
+msgstr "اســم"
+
+#. module: skok_odex
+#: field:skok.committee,notes:0
+#: view:skok.committee.member:skok_odex.view_committee_member_form
+#: field:skok.committee.member,notes:0
+#: view:skok.committee.title:skok_odex.view_committee_title_form
+#: field:skok.committee.title,notes:0
+#: view:skok.procedure:skok_odex.view_procedure_form
+#: field:skok.procedure,notes:0
+#: view:skok.procedure.type:skok_odex.view_procedure_type_form
+#: field:skok.procedure.type,notes:0
+#: view:skok.skok.type:skok_odex.view_skok_type_form
+#: field:skok.skok.type,notes:0
+msgid "Notes"
+msgstr "ملاحظــات"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form field:skok.skok,code:0
+msgid "Number"
+msgstr "رقم الوثیقة (الآلى)"
+
+#. module: skok_odex
+#: field:skok.skok,page_numbers:0
+msgid "Number of Pages"
+msgstr "عدد الصفحات"
+
+#. module: skok_odex
+#: view:skok.committee:skok_odex.view_committee_search
+#: field:skok.committee,organization_id:0
+#: view:skok.committee.member:skok_odex.view_committee_member_search
+#: field:skok.committee.member,organization_id:0
+#: view:skok.organization:skok_odex.skok_organization_filter
+#: view:skok.organization:skok_odex.view_organization_form
+#: view:skok.skok:skok_odex.view_skok_search field:skok.skok,organization_id:0
+msgid "Organization"
+msgstr "الكيان القانوني"
+
+#. module: skok_odex
+#: model:ir.model,name:skok_odex.model_skok_committee
+msgid "Organization Committee"
+msgstr "مجلس الشركة"
+
+#. module: skok_odex
+#: model:ir.model,name:skok_odex.model_skok_committee_member
+msgid "Organization Committee Member"
+msgstr "عضو مجلس الشركة"
+
+#. module: skok_odex
+#: model:ir.model,name:skok_odex.model_skok_committee_title
+msgid "Organization Committee Title"
+msgstr "وظيفة عضو مجلس شركة"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.view_organization_form
+msgid "Organization Name"
+msgstr "اسم الكيان القانوني"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.organization_list_action
+#: model:ir.model,name:skok_odex.model_skok_organization
+#: model:ir.ui.menu,name:skok_odex.menu_skok_organization
+#: view:skok.organization:skok_odex.view_organization_tree
+msgid "Organizations"
+msgstr "الكيانات القانونية"
+
+#. module: skok_odex
+#: field:skok.skok,origin:0
+msgid "Origin Number"
+msgstr "رقم الوثیقة"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:107 selection:skok.skok,original:0
+#, python-format
+msgid "Original"
+msgstr "أصـــل"
+
+#. module: skok_odex
+#: field:skok.skok,original:0
+msgid "Originality"
+msgstr "أصالة الوثيقة"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:108 selection:skok.skok,original:0
+#, python-format
+msgid "Photo Copy"
+msgstr "صـــورة"
+
+#. module: skok_odex
+#: code:addons/skok_odex/wizards/confirm.py:17
+#: code:addons/skok_odex/wizards/confirm.py:34
+#: code:addons/skok_odex/wizards/confirm.py:54
+#: code:addons/skok_odex/wizards/skok_wizards.py:47
+#: code:addons/skok_odex/wizards/skok_wizards.py:59
+#, python-format
+msgid "Please select a document befor proceed!"
+msgstr "يجب اختيار وثيقة للاستمرار !"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,procedure_id:0
+#: view:skok.procedure:skok_odex.view_procedure_form
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: view:skok.procedure:skok_odex.view_procedure_tree
+#: field:skok.view_skok.wizard,procedure_id:0
+msgid "Procedure"
+msgstr "اجــراء"
+
+#. module: skok_odex
+#: field:skok.procedure,code:0 field:skok.procedure.type,code:0
+msgid "Procedure Code"
+msgstr "رمز الجراء"
+
+#. module: skok_odex
+#: field:skok.procedure.type,model:0
+msgid "Procedure Model"
+msgstr "شاشة الاجراء"
+
+#. module: skok_odex
+#: field:skok.procedure.type,name:0
+msgid "Procedure Name"
+msgstr "مسمى الاجراء"
+
+#. module: skok_odex
+#: view:skok.procedure:skok_odex.view_procedure_search
+msgid "Procedure Search"
+msgstr "بحث بالاجراء"
+
+#. module: skok_odex
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: field:skok.procedure,type_id:0
+#: view:skok.procedure.type:skok_odex.view_procedure_type_form
+#: view:skok.procedure.type:skok_odex.view_procedure_type_tree
+msgid "Procedure Type"
+msgstr "نوع الاجراء"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.procedure_type_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_procedure_type
+msgid "Procedure Types"
+msgstr "انواع الاجراءات"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:162
+#: view:skok.skok:skok_odex.view_skok_form field:skok.skok,procedure_ids:0
+#: view:skok.wizards.wizard:skok_odex.view_wizards_wizard
+#, python-format
+msgid "Procedures"
+msgstr "الاجــراءات"
+
+#. module: skok_odex
+#: field:skok.skok,publish_date:0
+msgid "Publish Date"
+msgstr "تاریخ بدایة الصلاحیة"
+
+#. module: skok_odex
+#: field:skok.skok,ravage_date:0
+msgid "Ravage Date"
+msgstr "تاریخ الإتلاف"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form field:skok.skok,related_ids:0
+msgid "Related Documents"
+msgstr "وثائق ذات صلة"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Reset"
+msgstr "Reset"
+
+#. module: skok_odex
+#: field:skok.skok,row:0
+msgid "Row Number"
+msgstr "رقم الدرج"
+
+#. module: skok_odex
+#: view:skok.add_skok.wizard:skok_odex.view_add_skok_wizard
+#: view:skok.confirm.wizard:skok_odex.view_confirm_wizard
+#: view:skok.view_skok.wizard:skok_odex.view_view_skok_wizard
+#: view:skok.wizards.wizard:skok_odex.view_wizards_wizard
+msgid "Run"
+msgstr "تنفيــذ"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_form
+msgid "Run Procedure"
+msgstr "تنفيذ اجــراء"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.skok_organization_filter
+msgid "Search Organizations"
+msgstr "بحث في الشركات"
+
+#. module: skok_odex
+#: field:skok.skok,level:0
+msgid "Security Level"
+msgstr "درجة سریة الوثیقة"
+
+#. module: skok_odex
+#: field:skok.wizards.wizard,procedure:0
+msgid "Select a procedure"
+msgstr "اختــر اجراء"
+
+#. module: skok_odex
+#: field:skok.skok.type,sequence_id:0
+msgid "Sequencing"
+msgstr "ترقيم تسلسلي"
+
+#. module: skok_odex
+#: model:ir.ui.menu,name:skok_odex.menu_skok_settings
+msgid "Settings"
+msgstr "الإعدادات"
+
+#. module: skok_odex
+#: field:skok.skok,name:0
+msgid "Short Description"
+msgstr "الملخص"
+
+#. module: skok_odex
+#: view:skok.procedure:skok_odex.view_procedure_search
+#: view:skok.skok:skok_odex.view_skok_form
+#: view:skok.skok:skok_odex.view_skok_tree
+msgid "Skok"
+msgstr "وثيــقة"
+
+#. module: skok_odex
+#: field:skok.add_skok.wizard,skok_id:0 field:skok.confirm.wizard,skok_id:0
+#: field:skok.procedure,skok_id:0 field:skok.view_skok.wizard,skok_id:0
+#: field:skok.wizards.wizard,skok_id:0
+msgid "Skok Document"
+msgstr "وثيقة (صك)"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.skok_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_skok
+msgid "Skok Documents"
+msgstr "ادارة الوثــائق"
+
+#. module: skok_odex
+#: model:ir.ui.menu,name:skok_odex.menu_skok_root
+msgid "Skok Management"
+msgstr "ادارة الصكـــوك"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.procedure_list_action
+msgid "Skok Procedures"
+msgstr "اجراءات الوثائق"
+
+#. module: skok_odex
+#: view:skok.skok:skok_odex.view_skok_search
+msgid "Skok Search"
+msgstr "بحث في الوثائق"
+
+#. module: skok_odex
+#: view:skok.skok.type:skok_odex.view_skok_type_form
+#: view:skok.skok.type:skok_odex.view_skok_type_tree
+msgid "Skok Type"
+msgstr "نوع الوثیقة"
+
+#. module: skok_odex
+#: model:ir.actions.act_window,name:skok_odex.skok_type_list_action
+#: model:ir.ui.menu,name:skok_odex.menu_skok_skok_type
+msgid "Skok Types"
+msgstr "أنواع الوثائق"
+
+#. module: skok_odex
+#: model:ir.ui.menu,name:skok_odex.menu_skok_main
+msgid "Skoks"
+msgstr "الوثــائق"
+
+#. module: skok_odex
+#: view:skok.organization:skok_odex.skok_organization_filter
+msgid "State"
+msgstr "الحالة"
+
+#. module: skok_odex
+#: field:skok.skok,state:0
+msgid "Status"
+msgstr "الحالة"
+
+#. module: skok_odex
+#: field:skok.skok,storage:0
+msgid "Storage"
+msgstr "الخــزنة"
+
+#. module: skok_odex
+#: field:skok.organization,street:0
+msgid "Street"
+msgstr "شارع"
+
+#. module: skok_odex
+#: field:skok.organization,street2:0
+msgid "Street 2"
+msgstr "تقاطع"
+
+#. module: skok_odex
+#: field:skok.skok,message_summary:0
+msgid "Summary"
+msgstr "ملخص"
+
+#. module: skok_odex
+#: field:skok.skok,tag_ids:0
+msgid "Tags"
+msgstr "الواصفات"
+
+#. module: skok_odex
+#: code:addons/skok_odex/models/skok.py:127 selection:skok.skok,keep:0
+#, python-format
+msgid "Temporary"
+msgstr "مؤقت"
+
+#. module: skok_odex
+#: field:skok.skok,type_id:0
+msgid "Type"
+msgstr "النوع"
+
+#. module: skok_odex
+#: field:skok.skok,message_unread:0
+msgid "Unread Messages"
+msgstr "رسائل غير مقروءة"
+
+#. module: skok_odex
+#: field:skok.skok,value:0
+msgid "Value"
+msgstr "القيمة"
+
+#. module: skok_odex
+#: field:skok.organization,zip:0
+msgid "Zip"
+msgstr "الرمز البريدي"
+
+#. module: skok_odex
+#: view:skok.add_skok.wizard:skok_odex.view_add_skok_wizard
+msgid "add_skok"
+msgstr "add_skok"
+
+#. module: skok_odex
+#: view:skok.confirm.wizard:skok_odex.view_confirm_wizard
+msgid "confirm"
+msgstr "تأكيد"
+
+#. module: skok_odex
+#: field:skok.organization,email:0
+msgid "email"
+msgstr "بريد الكتروني"
+
+#. module: skok_odex
+#: field:skok.organization,fax:0
+msgid "fax"
+msgstr "فاكس"
+
+#. module: skok_odex
+#: field:skok.organization,mobile:0
+msgid "mobile"
+msgstr "الجوال"
+
+#. module: skok_odex
+#: view:skok.add_skok.wizard:skok_odex.view_add_skok_wizard
+#: view:skok.confirm.wizard:skok_odex.view_confirm_wizard
+#: view:skok.view_skok.wizard:skok_odex.view_view_skok_wizard
+#: view:skok.wizards.wizard:skok_odex.view_wizards_wizard
+msgid "or"
+msgstr "أو"
+
+#. module: skok_odex
+#: field:skok.organization,phone:0
+msgid "phone"
+msgstr "الهـــاتف"
+
+#. module: skok_odex
+#: view:skok.view_skok.wizard:skok_odex.view_view_skok_wizard
+msgid "view_skok"
+msgstr "view_skok"

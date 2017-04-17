@@ -5,12 +5,82 @@
             groups="base.group_user"
             sequence="10"/>
 
+
+        <!-- Skook -->
+        <menuitem name="Skoks"
+            id="menu_skok_main"
+            parent="menu_skok_root"
+            groups="base.group_user"
+            sequence="10"/>
+
+        <record model="ir.actions.act_window" id="skok_list_action">
+            <field name="name">Skok Documents</field>
+            <field name="res_model">skok.skok</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first skok
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Skok Documents"
+            id="menu_skok_skok"
+            action="skok_list_action"
+            parent="menu_skok_main"
+            groups="base.group_user"
+            sequence="1"/>
+
+
+        <record model="ir.actions.act_window" id="skok_type_list_action">
+            <field name="name">Skok Types</field>
+            <field name="res_model">skok.skok.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first skok type
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Skok Types"
+            id="menu_skok_skok_type"
+            action="skok_type_list_action"
+            parent="menu_skok_main"
+            groups="base.group_user"
+            sequence="10"/>
+
+        
+
+        <!-- End Skok -->
+
         <!-- Committees -->
         <menuitem name="Committees"
             id="menu_skok_committees"
             parent="menu_skok_root"
             groups="base.group_user"
             sequence="15"/>
+
+        <record model="ir.actions.act_window" id="committee_list_action">
+            <field name="name">Committees</field>
+            <field name="res_model">skok.committee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first committee
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Committees"
+            id="menu_skok_committee"
+            action="committee_list_action"
+            parent="menu_skok_committees"
+            groups="base.group_user"
+            sequence="1"/>
 
         <record model="ir.actions.act_window" id="committee_member_list_action">
             <field name="name">Committee Members</field>
@@ -29,7 +99,7 @@
             action="committee_member_list_action"
             parent="menu_skok_committees"
             groups="base.group_user"
-            sequence="10"/>
+            sequence="5"/>
 
         <record model="ir.actions.act_window" id="committee_title_list_action">
             <field name="name">Committee Titles</field>
@@ -78,6 +148,25 @@
             parent="menu_skok_settings"
             groups="base.group_user"
             sequence="1"/>
+
+        <record model="ir.actions.act_window" id="procedure_type_list_action">
+            <field name="name">Procedure Types</field>
+            <field name="res_model">skok.procedure.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first Procedure Types
+                </p>
+            </field>
+        </record>
+
+
+        <menuitem name="Procedure Types"
+            id="menu_skok_procedure_type"
+            action="procedure_type_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="2"/>
 
 
         

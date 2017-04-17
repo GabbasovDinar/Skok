@@ -73,7 +73,7 @@
             </field>
         </record>
 
-        <!-- Form view -->
+        <!-- Search view -->
         <record id="view_committee_member_search" model="ir.ui.view">
             <field name="name">Skok - Committee member search</field>
             <field name="model">skok.committee.member</field>
@@ -85,6 +85,66 @@
                     <group expand="1" string="Group By">
                         <filter string="Organization" domain="[]" context="{'group_by':'organization_id'}"/>
                         <filter string="Job Title" domain="[]" context="{'group_by':'title_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <!-- tree view -->
+        <record id="view_committee_tree" model="ir.ui.view">
+            <field name="name">Skok - committee tree</field>
+            <field name="model">skok.committee</field>
+            <field name="arch" type="xml">
+                <tree string="Committee ">
+                    <field name="name"></field>
+                    <field name="organization_id"></field>
+                    <field name="member_ids"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_committee_form" model="ir.ui.view">
+            <field name="name">Skok - Committee form</field>
+            <field name="model">skok.committee</field>
+            <field name="arch" type="xml">
+                <form string="Committee">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <label class="oe_edit_only" string="Name" attrs="{'invisible': True}"/>
+                                <field name="name" class="oe_inline" required="True" placeholder="Committee Name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="organization_id" required="True" widget="selection"></field>
+                            </group>
+                            <group>
+                                
+                            </group>
+                        </group>
+                        <separator string="Committee Members"></separator>
+                        <field name="member_ids"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search view -->
+        <record id="view_committee_search" model="ir.ui.view">
+            <field name="name">Skok - Committee search</field>
+            <field name="model">skok.committee</field>
+            <field name="arch" type="xml">
+                <search string="Committee Search">
+                    <field name="name" string="" filter_domain="['|','|','|','|',('name','ilike',self),('organization_id.name', 'ilike', self), ('organization_id.code', 'ilike', self), ('organization_id.city_id.name', 'ilike', self), ('organization_id.state_id.name', 'ilike', self)]"/>
+
+                    <field name="member_ids" string="Committee Member" domain="[('member_ids.name','ilike',self)]"/>
+
+
+                    <group expand="1" string="Group By">
+                        <filter string="Organization" domain="[]" context="{'group_by':'organization_id'}"/>
                     </group>
                 </search>
             </field>

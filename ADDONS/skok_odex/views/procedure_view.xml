@@ -1,0 +1,103 @@
+<openerp>
+    <data>
+        <!-- tree view -->
+        <record id="view_procedure_type_tree" model="ir.ui.view">
+            <field name="name">Skok - procedure_type tree</field>
+            <field name="model">skok.procedure.type</field>
+            <field name="arch" type="xml">
+                <tree string="Procedure Type ">
+                    <field name="code"></field>
+                    <field name="name"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_procedure_type_form" model="ir.ui.view">
+            <field name="name">Skok - Procedure Type form</field>
+            <field name="model">skok.procedure.type</field>
+            <field name="arch" type="xml">
+                <form string="Procedure Type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code" required="True"></field>
+                            </group>
+                            <group>
+                                <field name="name" required="True"></field>
+                                <field name="model"></field>
+                            </group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- tree view -->
+        <record id="view_procedure_tree" model="ir.ui.view">
+            <field name="name">Skok - procedure tree</field>
+            <field name="model">skok.procedure</field>
+            <field name="arch" type="xml">
+                <tree string="Procedure ">
+                    <field name="code"></field>
+                    <field name="name"></field>
+                    <field name="date"></field>
+                    <field name="skok_id"></field>
+                    <field name="member_id"></field>
+                    <field name="type_id"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_procedure_form" model="ir.ui.view">
+            <field name="name">Skok - Procedure form</field>
+            <field name="model">skok.procedure</field>
+            <field name="arch" type="xml">
+                <form string="Procedure">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code" required="True"></field>
+                                <field name="date" required="True"></field>
+                                <field name="skok_id" required="True"></field>
+                            </group>
+                            <group>
+                                <field name="name" required="True"></field>
+                                <field name="member_id"></field>
+                                <field name="partner_id"></field>
+                                <field name="type_id" required="True" widget="selection"></field>
+                            </group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- Search view -->
+        <record id="view_procedure_search" model="ir.ui.view">
+            <field name="name">Skok - procedure search</field>
+            <field name="model">skok.procedure</field>
+            <field name="arch" type="xml">
+                <search string="Procedure Search">
+                    <field name="name" string="Procedure" filter_domain="['|','|',('name','ilike',self),('code','ilike',self),('member_id.name','ilike',self),)]"/>
+
+                    <field name="skok_id" string="Skok" filter_domain="[('skok_id.name','ilike',self)]"/>
+
+                    <filter name="group_member_id" string="Member" icon="terp-partner" context="{'group_by':'member_id'}"/>
+                    <filter name="group_type_id" string="Procedure" icon="terp-partner" context="{'group_by':'type_id'}"/>
+
+                    <group expand="1" string="Group By">
+                        <filter string="Procedure Type" domain="[]" context="{'group_by':'type_id'}"/>
+                        <filter string="Member Name" domain="[]" context="{'group_by':'member_id'}"/>
+                        <filter string="Date" domain="[]" context="{'group_by':'member_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</openerp>

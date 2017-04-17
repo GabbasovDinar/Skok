@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+        <record id="base.group_skok_manager" model="res.groups">
+            <field name="name">Skok Specialist</field>
+            <field name="category_id" ref="base.module_category_skok_management"/>
+            <field name="comment"></field>
+        </record>
+        <record id="base.group_skok_user" model="res.groups">
+            <field name="name">Skok User</field>
+            <field name="category_id" ref="base.module_category_skok_management"/>
+            <field name="comment"></field>
+        </record>
+    </data>
+</openerp>

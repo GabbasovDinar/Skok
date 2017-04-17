@@ -1,0 +1,42 @@
+<openerp>
+    <data>
+        <!-- tree view -->
+        <record id="view_skok_type_tree" model="ir.ui.view">
+            <field name="name">Skok - skok_type tree</field>
+            <field name="model">skok.skok.type</field>
+            <field name="arch" type="xml">
+                <tree string="Skok Type ">
+                    <field name="code"></field>
+                    <field name="name"></field>
+                    <field name="procedure_type_ids"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_skok_type_form" model="ir.ui.view">
+            <field name="name">Skok - Skok Type form</field>
+            <field name="model">skok.skok.type</field>
+            <field name="arch" type="xml">
+                <form string="Skok Type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="code" required="True"></field>
+                                <field name="sequence_id" readonly="True"></field>
+                            </group>
+                            <group>
+                                <field name="name" required="True"></field>
+                                <field name="created" invisible="True"></field>
+                            </group>
+                        </group>
+                        <separator string="Allowed Procedures"></separator>
+                        <field name="procedure_type_ids" widget="many2many_tags" required="True"></field>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

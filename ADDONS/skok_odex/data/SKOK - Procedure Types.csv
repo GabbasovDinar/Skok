@@ -1,0 +1,8 @@
+id,code,name,model
+skok_procedure_type_001,P001,استلام وایداع الوثیقة,skok.add_skok.wizard
+skok_procedure_type_002,P002,الاطلاع على أصل الوثیقة,
+skok_procedure_type_003,P003,التزود بصورة الوثیقة,
+skok_procedure_type_004,P004,اعارة أصل الوثیقة,
+skok_procedure_type_005,P005,التسلیم النهائي للوثیقة,
+skok_procedure_type_006,P006,فرز الصكوك,
+skok_procedure_type_007,P007,دمج الصكوك,

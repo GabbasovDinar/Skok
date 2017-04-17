@@ -1,0 +1,140 @@
+<openerp>
+    <data>
+
+        <record model="ir.actions.act_window" id="procedure_list_action">
+            <field name="name">Skok Procedures</field>
+            <field name="res_model">skok.procedure</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first procedure
+                </p>
+            </field>
+        </record>
+
+        <!-- tree view -->
+        <record id="view_skok_tree" model="ir.ui.view">
+            <field name="name">Skok - skok tree</field>
+            <field name="model">skok.skok</field>
+            <field name="arch" type="xml">
+                <tree string="Skok">
+                    <field name="code"></field>
+                    <field name="name"></field>
+                    <field name="original"></field>
+                    <field name="organization_id"></field>
+                    <field name="creation_date"></field>
+                    <field name="entry_date"></field>
+                    <field name="state"></field>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_skok_form" model="ir.ui.view">
+            <field name="name">Skok - Skok form</field>
+            <field name="model">skok.skok</field>
+            <field name="arch" type="xml">
+                <form string="Skok">
+                    <header>
+                        <button type="object" name="launch_procedures" string="Run Procedure" class="oe_highlight"></button>
+                        <button type="object" name="reset" string="Reset" class="oe_highlight"></button>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,confirmed" readonly="1"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_right oe_button_box">
+                            <button attrs="{'invisible':[('state', '=', 'draft')]}" class="oe_inline oe_stat_button" type="action"
+                                name="%(procedure_list_action)d" icon="fa-list-ol"
+                                context="{'default_skok_id': active_id, 'search_default_skok_id': active_id, 'search_default_group_type_id': 1}">
+                                <div>Procedures<br/>History</div>
+                            </button>
+                            
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <label class="oe_edit_only" string="Name" attrs="{'invisible': True}" />
+                                <field name="code" class="oe_inline" readonly="True" placeholder="Number" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="name" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="organization_id" required="True" widget="selection"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="original" required="True" widget="selection"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="level" required="True"></field>
+                            </group>
+                            <group>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="type_id" widget="selection" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="origin"></field>
+                                <field name="tag_ids" widget="many2many_tags"></field>
+                                <field name="value"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="page_numbers" required="True"></field>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="General">
+                                <group string="Location">
+                                    <group>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="storage" required="True"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="address" required="True"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="state_id" domain="[('country_id', '=', country_id)]" required="True" widget="selection"></field>
+                                    </group>
+                                    <group>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="row" required="True"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="country_id" required="True"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" required="True" name="city_id" domain="[('state_id', '=', state_id)]" widget="selection"></field>
+                                    </group>
+                                </group>
+
+                                <group string="Documentation">
+                                    <group>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="creation_date" required="True"></field>
+                                        <field name="creation_date_hijri"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="keep" required="True"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="publish_date"></field>
+                                        <field name="counter" readonly="True"></field>
+                                    </group>
+                                    <group>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="entry_date" required="True"></field>
+                                        <field name="entry_date_hijri"></field>
+                                        <field name="ravage_date" attrs="{'required': [('keep', '=', 'temporary')],'invisible': [('keep', '!=', 'temporary')],'readonly':[('state', '!=', 'draft')]}"></field>
+                                        <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="expiry_date"></field>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Documents">
+                                <separator string="Attachments"></separator>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="attachment_ids" widget="many2many_binary"></field>
+                                <separator string="Related Documents"></separator>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="related_ids"></field>
+
+                                <field name="procedure_ids" invisible="True"></field>
+                                
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search view -->
+        <record id="view_skok_search" model="ir.ui.view">
+            <field name="name">Skok - Skok search</field>
+            <field name="model">skok.skok</field>
+            <field name="arch" type="xml">
+                <search string="Skok Search">
+                    <field name="name" string="" filter_domain="['|','|','|','|',('name','ilike',self),('organization_id.name', 'ilike', self), ('organization_id.code', 'ilike', self), ('organization_id.city_id.name', 'ilike', self), ('organization_id.state_id.name', 'ilike', self)]"/>
+
+
+
+                    <group expand="1" string="Group By">
+                        <filter string="Organization" domain="[]" context="{'group_by':'organization_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+    </data>
+</openerp>

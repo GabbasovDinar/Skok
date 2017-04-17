@@ -1,0 +1,71 @@
+<openerp>
+    <data>
+        <record id="view_confirm_wizard" model="ir.ui.view">
+            <field name="name">Skok - confirm Form</field>
+            <field name="model">skok.confirm.wizard</field>
+            <field name="arch" type="xml">
+                <form string="confirm">
+                    <group>
+                        <group>
+                            <field name="entry_date" required="True"></field>
+                        </group>
+                        <group>
+                            <field name="skok_id" readonly="True"></field>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Run" type="object" name="run" class="oe_highlight"></button>
+                         or 
+                        <button special="cancel" string="Cancel" class="oe_link"></button>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="view_add_skok_wizard" model="ir.ui.view">
+            <field name="name">Skok - add_skok Form</field>
+            <field name="model">skok.add_skok.wizard</field>
+            <field name="arch" type="xml">
+                <form string="add_skok">
+                    <group>
+                        <group>
+                            <field name="entry_date" required="True"></field>
+                            <field name="procedure_id" readonly="True"></field>
+                        </group>
+                        <group>
+                            <field name="skok_id" readonly="True"></field>
+                            <field name="member_id" required="True"></field>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Run" type="object" name="run" class="oe_highlight"></button>
+                         or 
+                        <button special="cancel" string="Cancel" class="oe_link"></button>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="view_view_skok_wizard" model="ir.ui.view">
+            <field name="name">Skok - view_skok Form</field>
+            <field name="model">skok.view_skok.wizard</field>
+            <field name="arch" type="xml">
+                <form string="view_skok">
+                    <group>
+                        <group>
+                            <field name="date" required="True"></field>
+                            <field name="procedure_id" readonly="True"></field>
+                        </group>
+                        <group>
+                            <field name="skok_id" readonly="True"></field>
+                            <field name="beneficier" required="True"></field>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Run" type="object" name="run" class="oe_highlight"></button>
+                         or 
+                        <button special="cancel" string="Cancel" class="oe_link"></button>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -20,11 +20,20 @@ Odex - Skok management module
     'depends' : ['base', 'base_odex', 'document'],
     'data': [
         # security
+        'security/skok_security.xml',
         'security/ir.model.access.csv',
+        # views
+        'data/skok_data.xml',
         # views
         'views/organization_view.xml',
         'views/committee_view.xml',
+        'views/skok_config_view.xml',
+        'views/skok_view.xml',
+        'views/procedure_view.xml',
         'views/actions_and_menus.xml',
+        # wizards
+        'wizards/skok_wizards_wizard.xml',
+        'wizards/confirm_wizard.xml',
     ],
     'qweb' : [
     ],

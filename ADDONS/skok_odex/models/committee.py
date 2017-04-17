@@ -6,7 +6,7 @@ class CommitteeTitle(models.Model):
     _name = 'skok.committee.title'
     _description = 'Organization Committee Title'
 
-    name = fields.Char(string='Title')
+    name = fields.Char(string='Job Title')
     notes = fields.Text(string='Notes')
 
 
@@ -15,7 +15,7 @@ class CommitteeMember(models.Model):
     _description = 'Organization Committee Member'
 
     name = fields.Char(string='Member Name')
-    title_id = fields.Many2one('skok.committee.title', string='Title')
+    title_id = fields.Many2one('skok.committee.title', string='Job Title')
     organization_id = fields.Many2one('skok.organization', string='Organization')
     notes = fields.Text(string='Notes')
 

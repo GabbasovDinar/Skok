@@ -7,7 +7,7 @@ class Organization(models.Model):
     _order = 'code, name'
     _description = 'Organizations'
 
-    code = fields.Char(string='Code')
+    code = fields.Char(string='Code', size=3)
     name = fields.Char(string='Name', related='partner_id.name', store=True)
     partner_id = fields.Many2one('res.partner', string='Address Ref')
     street = fields.Char(string='Street', related='partner_id.street')
@@ -19,7 +19,7 @@ class Organization(models.Model):
     email = fields.Char(string='email', related='partner_id.email')
 
     country_id = fields.Many2one('res.country', string='Country', default=lambda self: self.env.ref('base.sa', False))
-    state_id = fields.Many2one('res.country.state', string='State')
+    state_id = fields.Many2one('res.country.state', string='Counttry State')
     city_id = fields.Many2one('res.country.city', string='City')
 
     # organization committee
