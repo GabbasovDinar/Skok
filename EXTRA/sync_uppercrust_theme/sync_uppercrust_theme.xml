@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_editor" inherit_id="website.assets_editor" name="Editor assets">
+            <xpath expr="/t" position="inside">
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/src/js/sync_uppercrust_theme.js"></script>
+            </xpath>
+        </template>
+        
+    	<template id="assets_frontend" inherit_id="website.assets_frontend" name="Uppercrust">
+            <xpath expr="/t" position="inside">
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/animate/animate.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/odometer/odometer-theme-default.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/src/css/style.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/magnify/mag.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/map/styles.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/progressbar/css/normalize.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/progressbar/css/pro-bars.min.css"/>
+                <link rel="stylesheet" href="/sync_uppercrust_theme/static/lib/photogallery/styles.css"/>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/animate/jquery.viewportchecker.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/photogallery/jquery.magnific-popup.min.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/odometer/odometer.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/map/jquery.mapit.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/src/js/sync_uppercrust_theme_ext.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/magnify/okzoom.js"></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/progressbar/js/smoothscroll.min.js" ></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/progressbar/js/appear.min.js" ></script>
+                <script type="text/javascript" src="/sync_uppercrust_theme/static/lib/progressbar/js/pro-bars.min.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

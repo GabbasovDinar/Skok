@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Shorooq Yara Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Shorooq-Yara-Medium/Shorooq-Yara-Medium.otf');
+  src: url('../fonts/Shorooq-Yara-Medium/Shorooq-Yara-Medium.otf?#iefix') format('opentype'),
+       local('Shorooq Yara Medium'),
+       local('Shorooq-Yara-Medium');
+}
+

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'NeoSansW23 Med';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/NeoSansW23-Med/NeoSansW23-Med.ttf');
+  src: url('../fonts/NeoSansW23-Med/NeoSansW23-Med.ttf?#iefix') format('truetype'),
+       local('NeoSansW23 Med'),
+       local('NeoSansW23-Med');
+}
+

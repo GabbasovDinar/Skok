@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+  <template id="about_us" name="About Us">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty"></div>
+    <!--       <section style="top:0">
+            <div class="oe_cu_top_as text-center center-block" align="center">
+              <h4>About Us</h4>
+              <p>We go beyond the routine</p>
+            </div>
+          </section>
+          <section style="background-color:#e4e4e4;height:600px;">
+              <div class="container">
+                <div class="row mt64 mb16">
+                  <div class="col-xs-12 col-sm-6 col-md-6 bdr oe_cu_cont">
+                    <h4><strong>Welcome to Synconics</strong></h4> <br/>
+                    <span> Synconics Technologies Private Ltd., is a growing software development company based in India catering to the enterprises worldwide. Synconics is a rapidly growing IT company with extensive experience in designing and developing cutting-edge software solutions. We are a group of highly motivated  professionals with a strong desire to excel and an ability to innovate continuously.</span><br/>
+                    <br/>
+
+                    <span>Synconics has a team of IT specialists who want to go beyond the routine and create a company that would act in the market not only for business success but also for the sake of technology itself. Thus, contributing  to transformation of the society through software development remains the mission of the company. </span><br/><br/>
+
+                    <span>Synconics Technologies specializes in tailor-made Open Source  business solutions especially for SMEs across the globe. Our goal is to be the preferred IT service provider helping you to build the best solution using Open Source Technologies through Open Source software customization, integration, migration to open platforms or with custom Open Source development implementation, training for users and technical staff, as well as maintenance and support.</span><br/>
+
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-6 bdr">
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default" id="panel1">
+                        <div class="panel-heading">
+                          <h4 class="panel-title oe_cu_panel_heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                              Who we are?
+                            </a>
+                          </h4>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <i class="fa fa-plus-circle" style="float:right"/>
+                          </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                            Synconics is officially an ODOO S.A. partner headquartered in Belgium and Odoo is the most installed business software in the world. Odoo is used by 2.000.000 users worldwide ranging from very small companies (1 user) to very large ones (300,000 users).  We are specialized and are experts in implementing ERP products especially using ODOO Technology (formally known as OpenERP) in a cost effective manner to ensure that Total Cost of Ownership including software &amp; hardware is comparatively low.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default" id="panel2">
+                        <div class="panel-heading">
+                          <h4 class="panel-title oe_cu_panel_heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                              What we do?
+                            </a>
+                          </h4>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <i class="fa fa-plus-circle" style="float:right"/>
+                          </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                            We deliver all types of software solutions especially  ERP solutions ranging from a simple online web-based survey or website building to high end business solutions for instance Accounts, Sales, warehouse, manufacturing,  CRM, HRM, etc. Our team of ERP consultants &amp; developers have proven track record of successfully developing and implementing robust, flexible, scalable ERP products to large enterprise &amp; SME’s in private and public sector globally. We customize, integrate (third party apps) deploy &amp; implement ERP modules (specially using Odoo) globally. We are  cost competitive and deliver robust and scalable solutions. Through continuous research and  using several other available open source ERP products, we  create cost comparable matrix, performance matrix, End user &amp; customer feedback, rigorous testing etc.  to improve the overall quality and value for money of the product and end user experience.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default" id="panel3">
+                        <div class="panel-heading">
+                          <h4 class="panel-title oe_cu_panel_heading">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTree">
+                              Our Goals
+                            </a>
+                          </h4>
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTree">
+                            <i class="fa fa-plus-circle" style="float:right"/>
+                          </a>
+                        </div>
+                        <div id="collapseTree" class="panel-collapse collapse in">
+                          <div class="panel-body">
+                            At Synconics, we firmly believe that our vision is the driving force behind our growth. Our desire was, and still is, to build an institution that would outlast our lives, and a strong inclination towards being driven by values. While defining our vision, we asked ourselves some fundamental questions: • What is core to the organization? • What is the purpose for which we exist? • How do we envision our future? • What goals do we set ourselves? • What are our dreams? The answers to these questions would give us an idea as to how we would respond to the rapidly changing environment of business. The process of answering these questions was neither quick, not painless, since we often had to come face to face with our deepest concerns. Ultimately however, we believe that we have been able to filter through the noise and settle on what truly defines Synconics as an organization. • We seek to transform ourselves by giving everyone in our team an environment where we can achieve our true potential. • We seek to transform society by using our skills and resource to set people free from poverty, fear and whatever may hold them back from being everything that they ought to become.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section> -->
+      </t>
+  </template>   
+
+  </data>
+</openerp>

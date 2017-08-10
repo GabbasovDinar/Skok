@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="website.editor.dialog.link.st_primary">
+        <li>
+            <label class="btn st-btn-primary">ST-Primary<input value="st-btn-primary" class="link-style" type="radio" name="link-style-type"/></label>
+        </li>
+    </t>
+     <t t-name="website.editor.hoverhr.style">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <a class="btn btn-primary btn-sm" data-toggle="dropdown" href="#">Customize</a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li class="dropdown-submenu align">
+                    <a href="#" tabindex="-1">Alignment</a>
+                    <ul class="dropdown-menu">
+                        <li data-value="align-left"><a>Left</a></li>
+                        <li data-value="align-center"><a>Center</a></li>
+                        <li data-value="align-right"><a>Right</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-submenu color">
+                    <a href="#" tabindex="-1">Color</a>
+                    <ul class="dropdown-menu">
+                        <li data-value="color-st-retouch"><a>Uppercrust</a></li>
+                        <li data-value="color-darken"><a>Darken</a></li>
+                        <li data-value="color-success"><a>Success</a></li>
+                        <li data-value="color-danger"><a>Danger</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </t>
+    <t t-name="website.editor.link.progressbar">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <a id="customize_pbar" class="btn btn-primary btn-sm" data-toggle="modal" href="#">Customize</a>
+        </div>
+    </t>
+    <t t-name="website.editor.dialog.progressbar">
+        <t t-call='website.editor.dialog'>
+            <t t-set="title">Customize Progressbar</t>
+            <form>
+                <ul class="list-group">
+                    <li class="list-group-item form-group active">
+                        <h4 class="list-group-item-heading">
+                            <label for="pbar-color" class="control-label">
+                                Color
+                            </label>
+                        </h4>
+                        <input class="page form-control pbar-color"
+                               id="pbar-color"/>
+                    </li>
+                    <li class="list-group-item form-group active">
+                        <h4 class="list-group-item-heading">
+                            <label for="pbar-perc" class="control-label">
+                                Progress (%)
+                            </label>
+                        </h4>
+                        <input class="page form-control pbar-perc"
+                               id="pbar-perc"/>
+                    </li>
+                    <li class="list-group-item form-group active">
+                        <h4 class="list-group-item-heading">
+                            <label for="pbar-time" class="control-label">
+                                Interval (ms)
+                            </label>
+                        </h4>
+                        <input class="page form-control pbar-time"
+                               id="pbar-time"/>
+                    </li>
+                </ul>
+            </form>
+        </t>
+    </t>
+    <t t-name="website.editor.link.counter">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <a id="customize_counter" class="btn btn-primary btn-sm" data-toggle="modal" href="#">Customize</a>
+        </div>
+    </t>
+    <t t-name="website.editor.dialog.counter">
+        <t t-call='website.editor.dialog'>
+            <t t-set="title">Customize Counter</t>
+            <form>
+                <ul class="list-group">
+                    <li class="list-group-item form-group active">
+                        <h4 class="list-group-item-heading">
+                            <label for="stop-counter" class="control-label">
+                                Stop Counter
+                            </label>
+                        </h4>
+                        <input class="page form-control stop-counter" id="stop-counter"/>
+                    </li>
+                </ul>
+            </form>
+        </t>
+    </t>
+    <t t-name="website.editor.tab.manage">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <button id="tab_add" class="btn btn-primary btn-sm hidden" data-toggle="add" href="#">Add</button>
+            <button id="tab_remove" class="btn btn-danger btn-sm" data-toggle="remove" href="#">Remove</button>
+        </div>
+    </t>
+    <t t-name="website.editor.tab.style2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" t-att-href="widget.action_href">Tab Title </a>
+                </h4>
+            </div>
+            <div t-att-id="widget.action_id" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>TAB: BODY</p>
+                </div>
+            </div>
+        </div>
+    </t>
+    <t t-name="website.editor.gallery.style">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <a id="add_gallery" class="btn btn-primary btn-sm" data-toggle="add" href="#">Add</a>
+        </div>
+    </t>
+    <t t-name="website.editor.video.style">
+        <div contentEditable="false" class="hover-edition dropdown">
+            <a id="chnage_video_bg" class="btn btn-primary btn-sm" data-toggle="add" href="#">Change</a>
+        </div>
+    </t>
+    <t t-name="website.editor.gallery.image">
+        <div class="oe_snippet_body col-xs-12 col-sm-6 col-md-3">
+            <div class="fader">
+                <div class="text">
+                    <h4><strong>Lorem Ipsum</strong><br/><small> consectetuer</small></h4>
+                    <p>Consectetuer adipiscing elit.</p>
+                    <a href="/sync_uppercrust_theme/static/src/img/img-placeholder.jpg" class="mt32" data-toggle="gallery">
+                        <img src="/sync_uppercrust_theme/static/src/img/img-placeholder.jpg" class="hidden" data-toggle="gallery"/>
+                        <span class="fa fa-search-plus"></span>
+                    </a>    
+                </div>
+                <img src="/sync_uppercrust_theme/static/src/img/img-placeholder.jpg" data-toggle="gallery"/>
+            </div>
+        </div>
+    </t>
+</templates>

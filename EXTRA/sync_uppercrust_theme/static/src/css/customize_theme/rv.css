@@ -1,0 +1,160 @@
+.st-tabs > ul > li > a:hover, .st-tabs > ul > li > a:focus, .st-tabs > ul > li > a:active{
+	color: #f43c43 !important;
+	outline: none;
+	text-decoration: none;
+}
+.breadcrumb a{
+	color: #f43c43 !important;
+	text-decoration: none !important;
+}
+#odometer .odometer-inside{
+	color: #fff !important;
+}
+.panel-title a:hover{
+	color: #f43c43 !important;
+}
+hr {
+	border-top: 3px solid #F43C43 !important;
+}
+.st_master_text_color {
+	color: #f43c43 !important;
+}
+.master_background {
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fe2d58), color-stop(100%,#ff5132)) !important;
+    background: -webkit-linear-gradient(-45deg, #fe2d58 0%,#ff5132 100%) !important;
+    background: linear-gradient(135deg, #fe2d58 0%,#ff5132 100%) !important;
+}
+header .navbar {
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fe2d58), color-stop(100%,#ff5132)) !important;
+    background: -webkit-linear-gradient(-45deg, #fe2d58 0%,#ff5132 100%) !important;
+    background: linear-gradient(18deg, #fe2d58 0%,#ff5132 100%) !important;
+}
+section span.st_feature {
+	color: #f43c43 !important;
+}
+section span.st_feature:hover {
+	background: #f43c43 !important;
+	color: #FFF !important;
+}
+.st-img-single:hover .textbox {
+	background-color: #f43c43 !important;
+}
+.well span.no {
+	background: #f43c43 !important;
+}
+.st-comparison .panel-heading span {
+	background: #f43c43 !important;
+}
+.st-comparison .st-btn-primary, .st-comparison .panel-primary .st-btn-primary {
+	border: 2px solid #f43c43 !important;
+	color: #f43c43 !important;
+}
+.st-comparison .st-btn-primary:hover {
+	background: #f43c43 !important;
+	color: #FFF !important;
+}
+.navbar-static-top.fixed .js_usermenu .fixed-menu:hover a {
+    background-color: #FFF !important;
+}
+/*.navbar-static-top.fixed .js_usermenu .fixed-menu:focus a{
+	color: red ! important;
+}*/
+.navbar-static-top.fixed #top_menu .dropdown.open > a, .navbar-static-top.fixed .dropdown.open a {
+	background-color: #E6E6E6 !important;
+}
+.navbar-static-top.fixed #top_menu .dropdown.open > a{
+	background-color: #f43c43 ! important;
+}
+/*.navbar-static-top.fixed .js_usermenu {
+	background-color: #f43c43 !important;
+}*/
+.carousel.carousel_testimonial .carousel-inner, .wrap-row .twitter-row div .st-tweet, .carousel.carousel_twitter .carousel-inner {
+	background-color: #E85C61 !important;
+}
+.st-reference .carousel-img img, .st-tweet .carousel-img img {
+	border: 12px solid #D8A7A9 !important;
+}
+.st-reference .carousel-control, .carousel_twitter .carousel-control {
+	color: #D8A7A9 !important;
+}
+.st-reference .st_title > hr, .twitter_timeline .st_title > hr {
+	border-top: 3px solid #FFF !important;
+}
+.navbar-static-top.fixed .dropdown.open a span {
+	color: #FFF !important;
+}
+li.clone_font:hover a span, li.clone_font.active a span {
+	color: #f43c43 !important;
+}
+.oe_share h3 a:hover {
+	background-color: #f43c43 !important;
+}
+.app-store-img a:hover {
+	background-color: #f43c43 !important;
+}
+header .navbar.fixed {
+    background: #e6e6e6 !important;
+}
+.st-cntct-form .box-item-hlf .st-btn {
+	border: 1px solid #f43c43 !important;
+	color: #f43c43 !important;
+}
+.st-cntct-form .box-item-hlf .st-btn:hover {
+	border: 1px solid #f43c43 !important;
+    color: #fff !important;
+    background-color: #f43c43 !important;
+}
+ul[id*="products"] li a, div[id*="info"] li a {
+    color: #666 !important;
+}
+.oe_share h3 a {
+	color: #FFF !important;
+}
+.st-blog-mn-bdy-blk .st-bdy-cont-blk .st-img-cont-blk .st-overly-blk {
+	background-color: rgba(250, 113, 124, 0.698) ! important;
+}
+.st-blog-itm-info div[name='blog_post_data'] span.fa, .blog_title .fa, .st-blog-itm-info div[name='blog_post_data'] a, .st-blog-slct-itm ol.breadcrumb a, .st-blog-slct-itm .blog_title a {
+	color: #f43c43 !important;
+}
+.st-fill-cmt-blk .st-btn-blk .st-btn, .st-blog-itm-info .btn-blk > .st-btn {
+	border:1px solid #f43c43 !important;
+	color: #f43c43 !important;
+}
+.st-fill-cmt-blk .st-btn-blk .st-btn:hover, .st-blog-itm-info .btn-blk > .st-btn:hover {
+	background-color: #f43c43 !important;
+	color: #fff !important;
+}
+.blog_post .textbox hr, .blog-posts-title hr {
+	border-top: 3px solid #FFF !important;
+}
+#comments-list h4.media-heading  small {
+	color: #f43c43 !important;
+}
+.fader:hover .text {
+    background-color: #f43c43 !important;
+}
+::-moz-selection {
+	color: #FFF;
+    background: #f43c43 !important;
+}
+::selection {
+	color: #FFF;
+    background: #f43c43 !important;
+}
+.st-cntct-form .box-item-hlf .st-btn{
+	color: #F43C43 !important;
+}
+.oe_cu_btn_odoo:hover{
+    background-color: #FE463D ! important;
+}
+.oe_cu_btn_sync:hover{
+    background-color: #FE463D ! important;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px){
+    .navbar-static-top.fixed .dropdown.open a span {
+    	color: #f43c43 !important;
+    }
+    .navbar-static-top.fixed #top_menu .dropdown.open .dropdown-menu li:hover > a {
+       color: #f43c43 ! important;
+   }
+}

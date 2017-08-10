@@ -37,7 +37,6 @@
                 <form string="Skok">
                     <header>
                         <button type="object" name="launch_procedures" string="Run Procedure" class="oe_highlight"></button>
-                        <button type="object" name="reset" string="Reset" class="oe_highlight"></button>
                         <field name="state" widget="statusbar" statusbar_visible="draft,confirmed" readonly="1"/>
                     </header>
                     <sheet>

@@ -1,0 +1,122 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_odex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-16 20:52+0000\n"
+"PO-Revision-Date: 2017-04-16 23:54+0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"Language: ar\n"
+"X-Generator: Poedit 1.8.7.1\n"
+
+#. module: base_odex
+#: model:ir.actions.act_window,help:base_odex.res_city_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first City\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجيل المدن\n"
+"                </p>\n"
+"            "
+
+#. module: base_odex
+#: model:ir.actions.act_window,help:base_odex.res_state_list_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">Create the first State\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">تسجيل المحافظات\n"
+"                </p>\n"
+"            "
+
+#. module: base_odex
+#: model:ir.ui.menu,name:base_odex.res_city_menu
+#: view:res.country.city:base_odex.view_res_city_tree
+msgid "Cities"
+msgstr "المــــدن"
+
+#. module: base_odex
+#: view:res.country.city:base_odex.view_res_city_form
+msgid "City"
+msgstr "مدينة"
+
+#. module: base_odex
+#: field:res.country.city,code:0
+msgid "Code"
+msgstr "الرمز"
+
+#. module: base_odex
+#: model:ir.ui.menu,name:base_odex.country_menu
+msgid "Countries"
+msgstr "الدول"
+
+#. module: base_odex
+#: field:res.country.city,country_id:0
+msgid "Country"
+msgstr "الدولة"
+
+#. module: base_odex
+#: model:ir.actions.act_window,name:base_odex.res_city_list_action
+msgid "Country Cities"
+msgstr "المدن"
+
+#. module: base_odex
+#: model:ir.actions.act_window,name:base_odex.res_state_list_action
+#: model:ir.ui.menu,name:base_odex.res_state_menu
+msgid "Country States"
+msgstr "المحافظــات"
+
+#. module: base_odex
+#: field:res.country.city,create_uid:0
+msgid "Created by"
+msgstr "أنشيء بواسطة"
+
+#. module: base_odex
+#: field:res.country.city,create_date:0
+msgid "Created on"
+msgstr "انشىء بتاريخ"
+
+#. module: base_odex
+#: field:res.country.city,display_name:0
+msgid "Display Name"
+msgstr "المسمى"
+
+#. module: base_odex
+#: field:res.country.city,id:0
+msgid "ID"
+msgstr "معرّف"
+
+#. module: base_odex
+#: field:res.country.city,__last_update:0
+msgid "Last Modified on"
+msgstr "تاريخ اخر تعديل"
+
+#. module: base_odex
+#: field:res.country.city,write_uid:0
+msgid "Last Updated by"
+msgstr "مستخدم اخر تعديل"
+
+#. module: base_odex
+#: field:res.country.city,write_date:0
+msgid "Last Updated on"
+msgstr "آخر تعديل"
+
+#. module: base_odex
+#: field:res.country.city,name:0
+msgid "Name"
+msgstr "الإسم"
+
+#. module: base_odex
+#: field:res.country.city,state_id:0
+msgid "State"
+msgstr "المحــافظة"

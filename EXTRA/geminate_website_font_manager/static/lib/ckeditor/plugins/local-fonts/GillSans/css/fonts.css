@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'GillSans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/GillSans/GillSans.ttc');
+  src: url('../fonts/GillSans/GillSans.ttc?#iefix') format('truetype'),
+       local('GillSans');
+}
+

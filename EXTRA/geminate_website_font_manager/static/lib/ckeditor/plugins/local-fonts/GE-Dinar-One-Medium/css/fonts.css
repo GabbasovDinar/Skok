@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'GE Dinar One Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/GE-Dinar-One-Medium/GE-Dinar-One-Medium.otf');
+  src: url('../fonts/GE-Dinar-One-Medium/GE-Dinar-One-Medium.otf?#iefix') format('opentype'),
+       local('GE Dinar One Medium'),
+       local('GE-Dinar-One-Medium');
+}
+

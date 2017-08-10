@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<template id="company_description_inherit" inherit_id="website.company_description" name="Company Description">
+			<xpath expr="//a[@t-att-href='res_company.google_map_link()']" position="replace">
+			    <div id="map_canvas">
+			        <p style="opacity:0"><t t-esc="res_company.google_map_address()"/></p>
+			    </div>				
+			</xpath>
+		</template>
+
+   <template id="footer_default" inherit_id="website.footer_default" customize_show="True" name="Automatic Footer">
+           <xpath expr="//div[@class='container hidden-print']" position="replace">
+               <div class="container hidden-print top-footer">
+                   <div class="row text-center oe_cu_info">
+                         <span class="top-footer-img">
+                           <img src="/sync_uppercrust_theme/static/src/img/footer-b.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                         </span>
+                         <h3 class="mb32">Follow us</h3>
+                         <div class="oe_snippet_body oe_share">
+                             <h3>
+                                 <a target="_Blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}"><i class="fa fa-facebook"></i></a>
+                                 <a target="_Blank" class="oe_share_twitter" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}"><i class="fa fa-twitter"></i></a>
+                                 <a target="_Blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;"><i class="fa fa-linkedin"></i></a>
+                                 <a target="_Blank" class="oe_share_google" href="https://plus.google.com/share?url={url}"><i class="fa fa-google-plus"></i></a>
+                                 <a href="mailto:?body={url}&amp;subject={title}"><i class="fa fa-envelope-o"></i></a>
+                             </h3>
+                         </div>
+                       <div class="col-md-3" id="info">
+                           <h4>Connect with us</h4>
+                           <ul class="list-unstyled">
+                               <li><a href="/page/website.contactus">Contact us</a></li>
+                           </ul>
+                           <ul class="list-unstyled">
+                               <li t-ignore="true"><i class="fa fa-phone"></i> <span t-field="res_company.phone"></span></li>
+                               <li t-ignore="true"><i class="fa fa-envelope"></i>  <span t-field="res_company.email"></span></li>
+                           </ul>
+                           <h2>
+                               <a t-att-href="website.social_facebook" t-if="website.social_facebook"><i class="fa fa-facebook-square"/></a>
+                               <a t-att-href="website.social_twitter" t-if="website.social_twitter"><i class="fa fa-twitter"/></a>
+                               <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"><i class="fa fa-linkedin"/></a>
+                               <a t-att-href="website.social_youtube" t-if="website.social_youtube"><i class="fa fa-youtube-play"/></a>
+                               <a t-att-href="website.social_googleplus" t-if="website.social_googleplus" rel="publisher"><i class="fa fa-google-plus-square"/></a>
+                               <a t-att-href="website.social_github" t-if="website.social_github"><i class="fa fa-github"/></a>
+                           </h2>
+                       </div>
+                       <div>
+                           <div>
+                               <span class="app-store-img mb8">
+                                 <a href="#">
+                                   <img src="/sync_uppercrust_theme/static/src/img/odoo_store.png" title="Odoo Store"/>
+                                 </a>
+                                 <a href="#">
+                                   <img src="/sync_uppercrust_theme/static/src/img/sync_store.png" title="Synconics App Store"/>
+                                 </a>
+                               </span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </xpath>
+       </template>
+		<!-- <template id="footer_default_inherit" inherit_id="website.footer_default" name="Automatic Footer">
+        <xpath expr="//div[@class='container hidden-print']" position="replace">
+            <div class="container hidden-print top-footer">
+                <div class="row text-center">
+                      <span class="top-footer-img">
+                        <img src="/sync_uppercrust_theme/static/src/img/footer-b.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                      </span>
+                      <h3 class="mb32">Follow us</h3>
+                <div class="oe_snippet_body oe_share">
+                    <h3>
+                        <a target="_Blank" class="oe_share_facebook" href="https://www.facebook.com/sharer/sharer.php?u={url}"><i class="fa fa-facebook"></i></a>
+                        <a target="_Blank" class="oe_share_twitter" href="https://twitter.com/intent/tweet?text={title}&amp;url={url}"><i class="fa fa-twitter"></i></a>
+                        <a target="_Blank" class="oe_share_linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={url}&amp;title={title}&amp;"><i class="fa fa-linkedin"></i></a>
+                        <a target="_Blank" class="oe_share_google" href="https://plus.google.com/share?url={url}"><i class="fa fa-google-plus"></i></a>
+                        <a href="mailto:?body={url}&amp;subject={title}"><i class="fa fa-envelope-o"></i></a>
+                    </h3>
+                </div>
+                <div class="col-md-3" id="info oe_cu_info">
+                  <ul></ul>
+                </div>
+                  <span class="app-store-img mb8">
+                    <a href="#">
+                          <img src="/sync_uppercrust_theme/static/src/img/odoo_store.png" title="Odoo Store"/>
+                        </a>
+                        <a href="#">
+                          <img src="/sync_uppercrust_theme/static/src/img/sync_store.png" title="Synconics App Store"/>
+                        </a>
+                      </span>
+                </div>
+            </div>
+        </xpath>
+    </template> -->
+
+	<template id="layout_footer_copyright_inherit" inherit_id="website.layout_footer_copyright" name="Footer Copyright">
+	    <xpath expr="//div[@class='container mt16 mb8']" position="replace">
+	        <div class="row container mt0 last-footer">
+	            <div class="pull-right" t-ignore="true" t-if="not editable">
+	                Create a <a href="http://www.odoo.com/page/website-builder">free website</a> with
+	                <a class="label label-danger" href="http://www.odoo.com/page/website-builder">Odoo</a>
+	            </div>
+	            <div class="text-center text-muted" itemscope="itemscope" itemtype="http://schema.org/Organization">
+	                &amp;copy; 2015 <span t-field="res_company.name" itemprop="name">Company name</span> All rights reserved.<span class="divider"/> 
+	                <a href="./">Privacy Policy</a><span class="divider"/>
+	                <a href="./">Terms of Service</a>
+	            </div>
+	        </div>
+	    </xpath>
+	</template>
+    <template id="website.colors" name="Colors">
+        <t t-call="website.layout">
+          <div id="wrap" groups="base.group_website_publisher">
+            <div class="container">
+    
+            <div class="alert alert-info mt32" t-if="theme_customized">
+                <button type="button" class="close" data-dismiss="alert">&amp;times;</button>
+                <p>
+                    <h4>Theme Customized!</h4>
+                    Have a look at <a href="/">your homepage</a> or try another theme below.
+                </p>
+            </div>
+            <h1 class="text-center">Try to Customize Theme</h1>
+            <h3 class="text-center text-muted">You'll be able to customize the theme at anytime</h3>
+    
+            <div class="row mt32" id="themes-list">
+              <div class="col-md-4">
+                <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/default.jpg);">
+                  <div class="oe_cu_popup_layer">
+                       <h3>Default</h3>
+                      <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize">Apply</a>
+                  </div>
+                  <div class="options text-center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <!-- <div class="well text-center">
+                  <div class="image"></div>
+                  color_screen
+                  <div class="options text-center">
+                    <h3>Red Wine</h3>
+                    <a class="btn btn-info" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_rv">Apply</a>
+                  </div>
+                </div> -->
+                <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/red_wine.jpg);">
+                  <div class="oe_cu_popup_layer oe_cu_apply_rw">
+                       <h3>Red Wine</h3>
+                      <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_rv">Apply</a>
+                  </div>
+                  <div class="options text-center">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <!-- <div class="well text-center">
+                  <div class="options text-center">
+                    <h3>Blue Sky</h3>
+                    <a class="btn btn-info" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_bs">Apply</a>
+                  </div>
+                </div> -->
+                  <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/blue_sky.jpg);">
+                    <div class="oe_cu_popup_layer oe_cu_apply_bs">
+                         <h3>Blue Sky</h3>                        
+                        <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_bs">Apply</a>
+                    </div>
+                    <div class="options text-center">
+                    </div>
+                  </div>                
+              </div>
+
+              <div class="col-md-4">
+                <!-- <div class="well text-center">
+                  <div class="image"></div>
+                  <div class="options text-center">
+                    <h3>Green Grass</h3>
+                    <a class="btn btn-info" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_gg">Apply</a>
+                  </div>
+                </div> -->
+                <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/green_grass.jpg);">
+                  <div class="oe_cu_popup_layer oe_cu_apply_gg">
+                      <h3>Green Grass</h3>                      
+                      <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_gg">Apply</a>
+                  </div>
+                  <div class="options text-center">
+                  </div>
+                </div>                
+              </div>
+
+              <div class="col-md-4">
+                <!-- <div class="well text-center">
+                  <div class="image"></div>
+                  <div class="options text-center">
+                    <h3>Magenta Triangles</h3>
+                    <a class="btn btn-info" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_mt">Apply</a>
+                  </div>
+                </div> -->
+                <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/magenta_triangle.jpg);">
+                  <div class="oe_cu_popup_layer oe_cu_apply_mt">
+                      <h3>Magenta Triangles</h3>
+                      <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_mt">Apply</a>
+                  </div>
+                  <div class="options text-center">
+                  </div>
+                </div>                
+              </div>
+
+              <div class="col-md-4">
+                <!-- <div class="well text-center">
+                  <div class="image"></div>
+                  <div class="options text-center">
+                    <h3>Black Night</h3>
+                    <a class="btn btn-info" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_bn">Apply</a>
+                  </div>
+                </div> -->
+                <div class="well text-center oe_cu_default" style="background-image: url(/sync_uppercrust_theme/static/src/img/color_screen/black_night.jpg);">
+                  <div class="oe_cu_popup_layer oe_cu_apply_bn">
+                      <h3>Black Night</h3>
+                      <a class="btn btn-sm btn-info oe_cu_apply" href="/website/theme_customize?theme_id=sync_uppercrust_theme.theme_bn">Apply</a>
+                  </div>
+                  <div class="options text-center">
+                  </div>
+                </div>                
+              </div>
+
+            </div>
+            </div>
+          </div>
+        </t>
+    </template>
+
+	<template id="user_navbar_inherit" inherit_id="website.user_navbar" groups="base.group_user">
+    <xpath expr="//nav/ul[@id='oe_systray']/li[@id='customize-menu']/ul[@role='menu']/li[2]" position="replace">    
+			<li><a href="/page/website.colors">Customize Theme</a></li>
+		</xpath>
+	</template>
+
+	<!--
+	    Customized Theme
+	-->
+    <template id="sync_uppercrust_theme.theme_rv" name="Red View" inherit_id="website.theme" active="False" customize_show="True">
+        <xpath expr="//link[@id='bootstrap_css']" position="after">
+            <link rel='stylesheet' href='/sync_uppercrust_theme/static/src/css/customize_theme/rv.css' t-ignore="true"/>
+        </xpath>
+    </template>
+    <template id="sync_uppercrust_theme.theme_bs" name="Blue Sky" inherit_id="website.theme" active="False" customize_show="True">
+        <xpath expr="//link[@id='bootstrap_css']" position="after">
+            <link rel='stylesheet' href='/sync_uppercrust_theme/static/src/css/customize_theme/bs.css' t-ignore="true"/>
+        </xpath>
+    </template>
+    <template id="sync_uppercrust_theme.theme_gg" name="Green Grass" inherit_id="website.theme" active="False" customize_show="True">
+        <xpath expr="//link[@id='bootstrap_css']" position="after">
+            <link rel='stylesheet' href='/sync_uppercrust_theme/static/src/css/customize_theme/gg.css' t-ignore="true"/>
+        </xpath>
+    </template>
+    <template id="sync_uppercrust_theme.theme_mt" name="Magenta Triangles" inherit_id="website.theme" active="False" customize_show="True">
+        <xpath expr="//link[@id='bootstrap_css']" position="after">
+            <link rel='stylesheet' href='/sync_uppercrust_theme/static/src/css/customize_theme/mt.css' t-ignore="true"/>
+        </xpath>
+    </template>
+    <template id="sync_uppercrust_theme.theme_bn" name="Black Night" inherit_id="website.theme" active="False" customize_show="True">
+        <xpath expr="//link[@id='bootstrap_css']" position="after">
+            <link rel='stylesheet' href='/sync_uppercrust_theme/static/src/css/customize_theme/bn.css' t-ignore="true"/>
+        </xpath>
+    </template>
+
+    <template id="layout_logo_show_inherit" inherit_id="website.layout_logo_show" name="Show Logo">
+        <xpath expr="//a[@class='navbar-brand logo']" position="replace">
+            <a href="/" class="navbar-brand logo">
+                <img src="/default_logo.png" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+            </a>
+        </xpath>
+    </template>
+
+	</data>
+</openerp>
