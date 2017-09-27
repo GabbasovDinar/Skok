@@ -167,10 +167,86 @@
             parent="menu_skok_settings"
             groups="base.group_user"
             sequence="2"/>
+            
+		<!-- ++++Skok owners++++ -->
+		<record model="ir.actions.act_window" id="skok_owner_list_action">
+            <field name="name">Skok owner</field>
+            <field name="res_model">skok.owner</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first Skok owner
+                </p>
+            </field>
+        </record>
+		
+		
+        <menuitem name="Skok owners"
+            id="menu_skok_owner"
+            action="skok_owner_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="1"/>
+        <!-- ++++End Skok owners++++ -->
+        <!-- ++++Skok special case++++ -->
+        <record model="ir.actions.act_window" id="skok_special_case_list_action">
+            <field name="name">Skok special case</field>
+            <field name="res_model">skok.special.case</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first special case
+                </p>
+            </field>
+        </record>
 
 
-        
+        <menuitem name="Skok special case"
+            id="menu_skok_special_case"
+            action="skok_special_case_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="2"/>
+		<!-- ++++End Skok special case++++ -->
+		
+		<!-- ++++Skok skok purpose++++ -->
+        <record model="ir.actions.act_window" id="skok_purpose_list_action">
+            <field name="name">Skok purpose</field>
+            <field name="res_model">skok.purpose</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first Skok purpose
+                </p>
+            </field>
+        </record>
 
+
+        <menuitem name="Skok purpose"
+            id="menu_skok_purpose"
+            action="skok_purpose_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="2"/>
+		<!-- ++++End Skok purpose++++ -->
+		<!-- ++++Tenure type++++ -->
+        <record model="ir.actions.act_window" id="tenure_type_list_action">
+            <field name="name">Tenure type</field>
+            <field name="res_model">tenure.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first Tenure type
+                </p>
+            </field>
+        </record>
+        <menuitem name="Tenure type"
+            id="menu_tenure_type"
+            action="tenure_type_list_action"
+            parent="menu_skok_settings"
+            groups="base.group_user"
+            sequence="2"/>
+		<!-- ++++End Skok special case++++ -->
         <!-- Ende Settings -->
 
 

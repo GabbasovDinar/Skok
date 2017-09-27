@@ -1,5 +1,6 @@
 <openerp>
     <data>
+    <!-- ************** Skok - skok_type ******************** -->
         <!-- tree view -->
         <record id="view_skok_type_tree" model="ir.ui.view">
             <field name="name">Skok - skok_type tree</field>
@@ -32,6 +33,102 @@
                         </group>
                         <separator string="Allowed Procedures"></separator>
                         <field name="procedure_type_ids" widget="many2many_tags" required="True"></field>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- ************** Skok special case ******************** -->
+        
+        <!-- List Vew -->
+        <record id="view_skok_special_case_tree" model="ir.ui.view">
+            <field name="name">Skok special case</field>
+            <field name="model">skok.special.case</field>
+            <field name="arch" type="xml">
+                <tree string="Skok Owner">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_skok_special_case_form" model="ir.ui.view">
+            <field name="name">Skok special case</field>
+            <field name="model">skok.special.case</field>
+            <field name="arch" type="xml">
+                <form string="Skok special case">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"></field>
+                            </group>
+                            <group></group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- ************** Skok purpose ******************** -->
+        
+        <!-- List Vew -->
+        <record id="view_skok_purpose_tree" model="ir.ui.view">
+            <field name="name">Skok purpose</field>
+            <field name="model">skok.purpose</field>
+            <field name="arch" type="xml">
+                <tree string="Skok Owner">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_skok_purpose_form" model="ir.ui.view">
+            <field name="name">Skok purpose</field>
+            <field name="model">skok.purpose</field>
+            <field name="arch" type="xml">
+                <form string="Skok purpose">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"></field>
+                            </group>
+                            <group></group>
+                        </group>
+                        <separator string="Notes"></separator>
+                        <field name="notes"></field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- ************** tenure.type ******************** -->
+        
+        <!-- List Vew -->
+        <record id="view_tenure_type_tree" model="ir.ui.view">
+            <field name="name">Tenure type</field>
+            <field name="model">tenure.type</field>
+            <field name="arch" type="xml">
+                <tree string="Tenure type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view -->
+        <record id="view_tenure_type_form" model="ir.ui.view">
+            <field name="name">Tenure type</field>
+            <field name="model">tenure.type</field>
+            <field name="arch" type="xml">
+                <form string="Tenure type">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"></field>
+                            </group>
+                            <group></group>
+                        </group>
                         <separator string="Notes"></separator>
                         <field name="notes"></field>
                     </sheet>

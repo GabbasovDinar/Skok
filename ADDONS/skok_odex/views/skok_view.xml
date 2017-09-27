@@ -60,6 +60,8 @@
                                 <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="organization_id" required="True" widget="selection"></field>
                                 <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="original" required="True" widget="selection"></field>
                                 <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="level" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="owner_id" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="special_case_id" required="True"></field>
                             </group>
                             <group>
                                 <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="type_id" widget="selection" required="True"></field>
@@ -67,6 +69,8 @@
                                 <field name="tag_ids" widget="many2many_tags"></field>
                                 <field name="value"></field>
                                 <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="page_numbers" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="purpose_id" required="True"></field>
+                                <field attrs="{'readonly':[('state', '!=', 'draft')]}" name="tenure_type_id" required="True"></field>
                             </group>
                         </group>
                         <notebook>

@@ -30,6 +30,7 @@ Odex - Skok management module
         'views/skok_config_view.xml',
         'views/skok_view.xml',
         'views/procedure_view.xml',
+        'views/skok_owner_view.xml',
         'views/actions_and_menus.xml',
         # wizards
         'wizards/skok_wizards_wizard.xml',

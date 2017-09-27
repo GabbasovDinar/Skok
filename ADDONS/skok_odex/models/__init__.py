@@ -106,3 +106,5 @@ from . import organization
 from . import committee
 from . import skok
 from . import procedure
+from . import skok_owner
+from . import skok_conf

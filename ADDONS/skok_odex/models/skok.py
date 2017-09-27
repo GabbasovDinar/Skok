@@ -80,7 +80,7 @@ class Skok(models.Model):
             r.counter = len(r.procedure_ids)
 
 
-    code = fields.Char(string='Number')
+    code = fields.Char(string='Number',default='/')
     origin = fields.Char(string='Origin Number')
     name = fields.Char(string='Short Description')
     display_name = fields.Char(string='Name', compute='_compute_display_name')
@@ -103,6 +103,11 @@ class Skok(models.Model):
     tag_ids = fields.Many2many('skok.skok.tag', 'skok_tag_rel','skok_id', 'tag_id', string='Tags')
 
     organization_id = fields.Many2one('skok.organization', string='Organization')
+    
+    owner_id = fields.Many2one('skok.owner', string='Owner')
+    special_case_id = fields.Many2one('skok.special.case', string='Special case')
+    purpose_id = fields.Many2one('skok.purpose', string='Purpose')
+    tenure_type_id = fields.Many2one('tenure.type', string='Tenure type')
     original = fields.Selection(string='Originality', selection=[
         ('original', _('Original')),
         ('copy', _('Photo Copy')),
@@ -201,3 +206,4 @@ class Skok(models.Model):
                 'partner_id': partner and partner.id or False,
                 'date': fields.Datetime.now(),
             })
+        
